@@ -1,0 +1,27 @@
+{
+    "name": "antweb/laravel-slack-notification-channel",
+    "authors": [
+        {
+            "name": "Hui Yang",
+            "email": "chy1988@antwebstudio.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ant\\Notifications\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ant\\Notifications\\SlackChannelServiceProvider"
+            ],
+            "dont-discover": [
+                "laravel/slack-notification-channel"
+            ]
+        }
+    },
+    "require": {
+        "laravel/slack-notification-channel": "^2.3"
+    }
+}
